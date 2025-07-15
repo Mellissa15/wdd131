@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mellissa Qoqa">
+    <meta name="author" content="Mellissa Qoqa">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Thailand</h1>
+    </header>
+    <main class="hero-container">
+        <picture>
+            <source srcset="images/hero-large.webp" media="min-width: 1000px">
+            <source srcset="images/hero-medium.webp" media="min-width: 550px">
+            <img src="images/hero-small.webp" alt="A beautiful view of Thailand" width="400" height="200">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 513,120 sq km</li>
+                <li><strong>Population:</strong> 69,950,850</li>
+                <li><strong>Capital:</strong> Bangkok</li>
+                <li><strong>Currency:</strong> Thai Baht (THB)</li>
+                <li><strong>Language:</strong> Thai</li>
+                <li><strong>Government:</strong> Constitutional Monarchy</li>
+                <li><strong>Timezone:</strong> UTC+7</li>
+                <li><strong>Calling Code:</strong> +66</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong> 32°C</li>
+                <li><strong>Conditions:</strong> Humid, Mostly Sunny</li>
+                <li><strong>Wind:</strong> 15 km/h</li>
+                <li><strong>Wind Chill:</strong> 34°C</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> 🐞 Mellissa Qoqa 🐞 South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
