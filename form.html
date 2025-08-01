@@ -4,64 +4,61 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>W05 Website Planning Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta description="WDD 131 - Dynamic Web Fundamentals - Mellissa Qoqa">
+    <meta name="author" content="Mellissa Qoqa">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Website Planning Document</h1>
-        <h2>Site Name: GirlFit Studio</h2>
-        <p>
-            This site is named <strong>GirlFit Studio</strong> because it focuses on empowering women in their fitness
-            journeys with accessible workout routines, tips, and resources for home and gym use.
-        </p>
-        <p><em>Optional Domain:</em> girlfitstudio.com</p>
-    </header>
+    <h1>Product Review Form</h1>
 
-    <section>
-        <h2>Site Purpose</h2>
-        <p>
-            The purpose of GirlFit Studio is to provide a hub for women interested in health and fitness. The site will
-            include beginner-friendly workout plans, nutritional tips, and a form to sign up for virtual coaching or
-            newsletters. It’s designed to be motivational, supportive, and easy to use.
-        </p>
-    </section>
+    <form action="review.html" method="get">
+        <!-- Product Name -->
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
 
-    <section>
-        <h2>Scenarios</h2>
-        <ul>
-            <li>What’s a good beginner workout plan I can do at home?</li>
-            <li>How do I sign up for a virtual fitness class?</li>
-        </ul>
-    </section>
+        </select>
 
-    <section>
-        <h2>Color Schema</h2>
-        <p>Primary Color: <span style="color:#EF5DA8;">#EF5DA8 (Pink)</span> - Used for buttons, links, and headings.
-        </p>
-        <p>Secondary Color: <span style="color:#5DEFC5;">#5DEFC5 (Mint)</span> - Used for accents and backgrounds.</p>
-    </section>
+        <fieldset>
+            <legend>Overall Rating:</legend>
+            <label><input type="radio" name="rating" value="1" required /> 1 ★</label>
+            <label><input type="radio" name="rating" value="2" /> 2 ★★</label>
+            <label><input type="radio" name="rating" value="3" /> 3 ★★★</label>
+            <label><input type="radio" name="rating" value="4" /> 4 ★★★★</label>
+            <label><input type="radio" name="rating" value="5" /> 5 ★★★★★</label>
+        </fieldset>
 
-    <section>
-        <h2>Typography</h2>
-        <ul>
-            <li><strong>Heading Font:</strong> 'Poppins', sans-serif</li>
-            <li><strong>Body Font:</strong> 'Open Sans', sans-serif</li>
-            <li>Headings will be bold and engaging; body text will be clean and easy to read.</li>
-        </ul>
-    </section>
+        <!-- Date of Installation -->
+        <label for="installDate">Date of Installation:</label>
+        <input type="date" id="installDate" name="installDate" required />
 
-    <section>
-        <h2>Wireframes</h2>
-        <p><strong>Mobile View:</strong></p>
-        <img src="images/wire-frame.PNG" alt="Mobile wireframe layout" width="300">
-        <p><strong>Desktop View:</strong></p>
-        <img src="images/wire-frame.PNG" alt="Desktop wireframe layout" width="600">
-    </section>
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features:</legend>
+            <label><input type="checkbox" id="feature1" name="features" value="easy_install" /> Easy to Install</label>
+            <label><input type="checkbox" id="feature2" name="features" value="durable" /> Durable</label>
+            <label><input type="checkbox" id="feature3" name="features" value="affordable" /> Affordable</label>
+            <label><input type="checkbox" id="feature4" name="features" value="eco_friendly" /> Eco Friendly</label>
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review" rows="5" placeholder="Write your review here..."></textarea>
+
+        <!-- User Name -->
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review" />
+    </form>
 
     <footer>
-        <p>&copy; 2025 GirlFit Studio</p>
+        <p>&copy; <span id="currentyear">🐞2025 </span> Mellissa Qoqa 🐞 South Africa</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
