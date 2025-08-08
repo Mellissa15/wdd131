@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mellissa Qoqa">
+    <meta name="author" content="Mellissa Qoqa">
+    <title>Self-Care Journal</title>
+    <link rel="stylesheet" href="styles/project.css" />
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Self-Care Journal 🧘</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>How are you feeling today?</h2>
+            <form id="journalForm">
+                <label for="mood">Mood:</label>
+                <select id="mood" name="mood" required>
+                    <option value="">Choose one</option>
+                    <option value="happy">Happy 😊</option>
+                    <option value="tired">Tired 😴</option>
+                    <option value="stressed">Stressed 😩</option>
+                    <option value="motivated">Motivated 💪</option>
+                </select>
+
+                <label for="entry">Write your thoughts:</label>
+                <textarea id="entry" name="entry" rows="5" required></textarea>
+
+                <button type="submit">Save Entry</button>
+            </form>
+
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Self-Care Central |🎀 Mellissa Qoqa 🎀 |<a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>
